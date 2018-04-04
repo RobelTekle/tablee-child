@@ -1,0 +1,142 @@
+/*
+Theme Name:     tablee Child
+Theme URI:      http://example.com/
+Description:    Tema Child per il tema tablee
+Author:         Qui il vostro nome
+Author URI:     http://example.com/about/
+Template:       tablee
+Version: 		1.0.0
+*/
+
+
+/*--------------------------- SETTING LAYOUT------------- */
+/* hide titles */
+.hidetitle .entry-title {
+    display: none;
+}
+#page {
+    display: flex;
+    height: 100vh;
+}
+#content {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+/* -------------------------HEADER ----------------------- */
+#masthead {
+    height: 100vh;
+    flex: 0 0 auto;
+}
+.main-navigation li {
+    float: none;
+    position: unset;
+    text-align: center;
+}
+
+/*------------------------ SLIDER  ------------------------- */
+.hentry, .entry-content {
+    margin: 0;
+}
+#metaslider_43 img {
+    height: 100vh;
+    object-fit: cover;
+}
+.metaslider .caption-wrap {
+    position: absolute !important;
+    left: 25% !important;
+    top: 50% !important;
+    bottom: unset !important;
+    width: 50%  !important;
+    text-align: center;
+}
+
+/* ------------------------ GALLERY -------------------------*/
+
+
+/* Hover effect on photos */
+figcaption.fg-caption {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+div.fg-item:hover figcaption.fg-caption {
+    /* margin: 6px 60px 6px 6px !important; */
+    width: calc(100% - 40px) !important;
+    height: calc(100% - 40px) !important;
+    left: 20px !important;
+    top: 20px !important;
+    opacity: 0.8 !important;
+    background-color: rgb(50, 255, 50) !important ;
+}
+
+
+div.fg-item:hover div.fg-caption-title {
+    opacity: 1;
+    z-index: 0;
+    font-weight: 700;
+}
+
+div.fg-item img {
+    transition: opacity .4s ease;
+}
+
+div.fg-item:hover img{
+    opacity: 0.8 !important;
+}
+
+
+/* Lightbox */
+
+div.fbx-inner {
+    border: none !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+a.fbx-next.fbx-btn-transition {
+    box-shadow: none !important;
+    border: none !important;
+    right: -32px !important;
+    border-radius: 0 7px 7px 0 !important;
+    top: 7%  !important;
+    height: 105% !important;
+    width: 30% !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 30px  !important;
+    color: transparent !important;
+}
+
+
+
+a.fbx-next.fbx-btn-transition::before {
+    /* position: relative !important;
+    left: 80% !important; */
+    display: none !important;
+}
+
+a.fbx-prev.fbx-btn-transition {
+    box-shadow: none !important;
+    border: none !important;
+    left: -32px !important;
+    border-radius:  7px 0 0 7px !important;
+    top: 7% !important;
+    height: 105% !important;
+    width: 30% !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 30px  !important;
+}
+
+a.fbx-prev.fbx-btn-transition::before {
+    display: none !important;
+}
+
+a.fbx-close.fbx-btn-transition {
+    display: none;
+}
+
+div.fbx-caption-title, div.fbx-caption {
+    display: none;
+}
